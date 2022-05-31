@@ -24,8 +24,7 @@ lightCrushing(blackTea).
 oxidation(Tea) :-
 	partialOxidation(Tea) ;
 	fullOxidation(Tea) ;
-	cTCwithFullOxidation(Tea);
-	qsdf(Tea).
+	cTCwithFullOxidation(Tea).
 partialOxidation(oolongTea).
 fullOxidation(blackTea).
 
