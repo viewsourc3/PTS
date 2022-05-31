@@ -4,6 +4,27 @@
 server(Port) :-
 	http_server(http_dispatch, [port(Port)]).
 
+/** 
+identifier les différents types de thé
+*/
+kind(whiteTea).
+kind(blackTea).
+kind(oolongTea).
+kind(yellowTea).
+kind(greenTea).
+
+/** 
+identifier les étapes
+*/
+step(wilting).
+step(bruising).
+
+/**
+identifier les contraintes de précédences
+*/
+pred(bruising, wilting).
+pred(oxidation, bruising).
+
 /** wilting - flétrissement 
 wilting(whiteTea) se lit : La production du whiteTea passe par une étape de wilting
 idem pour les autres facts
